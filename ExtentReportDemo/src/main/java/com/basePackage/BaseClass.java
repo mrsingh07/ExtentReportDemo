@@ -35,11 +35,11 @@ public class BaseClass {
 	@BeforeMethod
 	public void setup() {
 		WebDriverManager.chromedriver().setup();
-//		driver = new ChromeDriver();
-		ChromeOptions chromeOptions= new ChromeOptions();
-		chromeOptions.addArguments("headless");
-		chromeOptions.addArguments("window-size=1980,1080");
-	    driver = new ChromeDriver(chromeOptions);
+		driver = new ChromeDriver();
+//		ChromeOptions chromeOptions= new ChromeOptions();
+//		chromeOptions.addArguments("headless");
+//		chromeOptions.addArguments("window-size=1980,1080");
+//	    driver = new ChromeDriver(chromeOptions);
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
 		
